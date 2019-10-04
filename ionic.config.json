@@ -1,5 +1,7 @@
 {
-  "name": "ionicDemo",
-  "integrations": {},
+  "name": "menuTabs",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

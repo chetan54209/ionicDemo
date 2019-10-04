@@ -1,0 +1,12 @@
+{
+  "home": "HOME",
+  "about": "ABOUT",
+  "contact": "CONTACT",
+  "hi" : "Hi {{name}}",
+  "age" : "Your age is: {{age}}",
+  "select_language": "Select your language",
+  "language": "LANGUAGE",
+  "cancel": "CANCEL",
+  "follow_us": "Follow us on Twitter",
+  "tab 1": "TAB 1" 
+}

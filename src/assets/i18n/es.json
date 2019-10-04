@@ -1,0 +1,12 @@
+{
+  "home": "Inicio",
+  "about": "Acerca",
+  "contact": "Contacto",
+  "hi" : "Hola {{name}}",
+  "age" : "Tu edad es: {{age}}",
+  "select_language": "Selecciona tu idioma",
+  "language": "Idiomas",
+  "cancel": "Cancelar",
+  "follow_us": "Seguinos en Twitter",
+  "tab 1": "Toadb 1" 
+}
