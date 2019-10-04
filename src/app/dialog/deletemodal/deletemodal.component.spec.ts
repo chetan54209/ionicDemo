@@ -12,7 +12,9 @@ import { IonicModule } from '@ionic/angular';
 describe('DeletemodalComponent', () => {
   let component: DeletemodalComponent;
   let fixture: ComponentFixture<DeletemodalComponent>;
-
+  const dialogMock = {
+    close: () => { }
+   };
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ DeletemodalComponent ],
@@ -28,7 +30,8 @@ describe('DeletemodalComponent', () => {
     ],
     providers: [
       { provide: MAT_DIALOG_DATA, useValue: {} },
-      { provide: MatDialogRef, useValue: {} }
+      { provide: MatDialogRef, useValue: {} },
+      {provide: MatDialogRef, useValue: dialogMock},
   ]
     })
     .compileComponents();
@@ -44,6 +47,19 @@ describe('DeletemodalComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it(`should set submitted to be true`, async(() => {
+    component.confirmDelete();
+    expect(component.confirmDelete).toBeTruthy();
+    }));
 
+    it('dialog should be closed after onNoClick()', () => {
+      let spy = spyOn(component.dialogRef, 'close').and.callThrough();
+      component.onNoClick();
+      expect(spy).toHaveBeenCalled();    
+    });
 
+    // it('dialog should be closed after onNoClick()', async(() => {
+    //   component.onNoClick();
+    //   expect(component.dialogRef.close).toHaveBeenCalled();
+    // }));
 });
