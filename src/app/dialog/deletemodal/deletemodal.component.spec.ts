@@ -62,4 +62,5 @@ describe('DeletemodalComponent', () => {
     //   component.onNoClick();
     //   expect(component.dialogRef.close).toHaveBeenCalled();
     // }));
+    
 });
